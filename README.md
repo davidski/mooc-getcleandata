@@ -22,6 +22,6 @@ This has been tested under R 3.1.0 on Windows 7 64-bit.
 
 Instructions
 ------------
-Run `run_analysis.R' to create:
+Run `run_analysis.R` to create:
 + `mergedData.txt` - the merged test and training data sets, as specified
 + `summarisedStats.txt` - the summarised data, as requested
