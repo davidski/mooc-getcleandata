@@ -13,6 +13,11 @@ Data Columns
 
 Summary Choices
 ---------------
+The assignment requests that only measurements involving mean or standard deviation are retained. 
+For this work, this is interpreted to involve only those columns with the format of mean() or std().  
+This excludes measurements such as `fbodybodygyrojerkmag-meanfreq()`. These can be included via a 
+simple modification to the grep pattern in `run_analysis.R`.
+
 
 Experimental Study Design
 -------------------------
