@@ -12,8 +12,11 @@ featureNames <- read.csv('features.txt', sep = '', stringsAsFactors = F, header 
 
 # clean up the names to tidy standards
 featureNames <- featureNames[,2]
+# lowercase
 featureNames <- tolower(featureNames)
-#sub("\\(\\)", "", featureNames[,2])
+# replace awkward/bad characters
+# this could be replaced with a more efficient gsub, but is left seperate to clearly 
+# distinguish what is being performed
 featureNames <- gsub("\\-", "_", featureNames)
 featureNames <- gsub("\\-", "_", featureNames)
 featureNames <- gsub("\\(", "", featureNames)
